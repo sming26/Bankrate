@@ -189,8 +189,8 @@ mergeall = function(xtable, ytable, feats, mort_index) {
 }
 
 mort30 = mergeall(indicators07_17, targets07_17, feats30, 1)
-mort15 = mergeall(indicators07_17, targets07_17, feats15, 2)
-mort5 = mergeall(indicators07_17, targets07_17, feats5, 3)
+mort15 = mergeall(indicators07_17, targets07_17, c(feats15,'MORTGAGE15US'), 2)
+mort5 = mergeall(indicators07_17, targets07_17, c(feats5,'MORTGAGE5US'), 3)
 
 write.csv(mort30, 'mort30.csv', row.names = F)
 write.csv(mort15, 'mort15.csv', row.names = F)
