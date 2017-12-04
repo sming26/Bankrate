@@ -1,5 +1,3 @@
-#setwd('/Users/riyueyoutu/Desktop/USC/Courses/DSO522/project/')
-
 #### --------------- read data ---------------
 library(quantmod)
 library(VIF)
